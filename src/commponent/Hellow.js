@@ -1,30 +1,27 @@
-import World from "./World";
-import styles from "./Hellow.module.css"
+import { useState } from "react";
 
 export default function Hellow() {
 
-    function showName(name) {
-        console.log(name);
-    }
-    function showAge(age) {
-        console.log(age);
-    }
-    function showText(txt) {
-        console.log(txt);
-    }
+    // let name = "mike";
+    const [name, setName] = useState("mike");
+
+    // function changeName(newName) {
+    //     name = name === "mike" ? "jane" : "mike";
+    //     console.log(name);
+    //     document.getElementById("name").innerText = name;
+    //     const newName = name === "mike" ? "jane" : "mike";
+    //     setName(newName);
+    // }
 
     return (
         <div>
-            <h1>Hellow</h1>
-            <button onClick={() => 
-                showName("mike")
-            }>show name</button>
-            <button onClick={() => 
-                console.log(10)
-            }>show age</button>
-            <input type="text" onChange={(e) =>
-                showText(e.target.value)
-            }></input>
+            <h1>state</h1>
+            <h2 id="name">{name}</h2>
+            <button onClick={() => {
+                const newName = name === "mike" ? "jane" : "mike"
+                setName(newName);
+            }
+            }>Change</button>
         </div>
     )
 }
