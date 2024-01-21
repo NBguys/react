@@ -1,3 +1,3 @@
 export default function World() {
-    return <h1>world</h1>
+    return <h1>World</h1>
 }
