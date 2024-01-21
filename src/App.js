@@ -1,10 +1,12 @@
 import './App.css';
 import Hellow from './commponent/Hellow';
-import style from './App.module.css';
 
 function App() {
   return <div className='App'>
-    <Hellow></Hellow>
+    <h3>props : properties</h3>
+    <Hellow paramAge={10}/>
+    <Hellow paramAge={20}/>
+    <Hellow paramAge={30}/>
   </div>
 }
 
