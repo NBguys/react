@@ -1,13 +1,15 @@
-import './App.css';
-import Hellow from './commponent/Hellow';
+import Header from "./commponent/Header";
+import DayList from "./commponent/DayList";
+import Day from "./commponent/Day";
 
 function App() {
-  return <div className='App'>
-    <h3>props : properties</h3>
-    <Hellow paramAge={10}/>
-    <Hellow paramAge={20}/>
-    <Hellow paramAge={30}/>
-  </div>
+  return (
+    <div className='App'>
+      <Header />
+      <DayList />
+      <Day />
+    </div >
+  );
 }
 
 export default App;
