@@ -3,7 +3,7 @@ import useFetch from "../hooks/useFetch";
 
 export default function DayList() {
 
-    const days = useFetch("http://localhost:3001/days");
+    const days = useFetch("http://localhost:3003/days");
     
     return (
         <>
