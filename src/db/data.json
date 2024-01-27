@@ -98,6 +98,20 @@
       "kor": "나무",
       "day": "1",
       "isDone": false
+    },
+    {
+      "id": "199e",
+      "eng": "monkey",
+      "kor": "원숭이",
+      "day": "5",
+      "isDone": false
+    },
+    {
+      "id": "1016",
+      "eng": "windos",
+      "kor": "창문",
+      "day": "1",
+      "isDone": false
     }
   ]
 }
